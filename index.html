@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraGeek</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="encabezado">
+        <img class="header__logo" src="./assets/logogeek.png" alt="logo geek">
+
+    </header>
+
+    <main>
+        <h2 class="productos__header">MIS PRODUCTOS:</h2>
+        <div class="ordenar__formprod">
+        <section class="productos">
+            <div class="productos-grid">
+                <div class="producto_box">
+                   <img class="prod__img" src="" alt="">
+                   <h3>Game Boy Classic Stormtrooper</h3>
+                   <p>$ 60,00</p>
+                </div>
+                <div class="producto_box">
+                       <img class="prod__img" src="" alt="">
+                       <h3>Game Boy Classic Stormtrooper</h3>
+                       <p>$ 60,00</p>
+                </div>
+                <div class="producto_box">
+                    <img class="prod__img" src="" alt="">
+                    <h3>Game Boy Classic Stormtrooper</h3>
+                    <p>$ 60,00</p>
+                 </div>
+                  <div class="producto_box">
+                <img src="" alt="">
+                <h3>Game Boy Classic Stormtrooper</h3>
+                <p>$ 60,00</p>
+                 </div>
+            </div>
+        </section>
+        <section class="formulario">
+            <div class="formulario__container">
+                <h2 class="formulario__Texto">Agregar Producto:</h2>
+            </div>
+                 <form class="container__formulario" data-formulario>
+                    <div class="formulario__campo">
+                        <label class="campo__etiqueta" for="nombre"></label>
+                        <input name="nombre" class="campo__escrita" type="text" placeholder="nombre" required
+                        id='nombre' data-nombre />
+                    </div>
+    
+    
+                    <div class="formulario__campo">
+                        <label class="campo__etiqueta" for="precio"></label>
+                        <input name="precio" class="campo__escrita" type="number" placeholder="precio" required
+                            id='precio' data-precio/>
+                    </div>
+    
+                    <div class="formulario__campo">
+                        <label class="campo__etiqueta" for="imagen"></label>
+                        <input name="imagen" class="campo__escrita" type="url" placeholder="imagen" required
+                            id='imagen' data-imagen/>
+                    </div>
+    
+                    <input class="formulario__boton" type="submit" />
+                    <input class="formulario__boton__reset" type="reset"value="Limpiar"/>
+               </form>
+    
+        </section>
+    
+    </div>
+
+        
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 AluraGeek</p>
+            <p>Oscar Joan Soto Gómez</p>
+            <!-- <img src="assets/logogeek.png" alt="Descripción de la imagen en el footer"> -->
+        </div>
+        
+    </footer>
+    <script src="JS/listar-productos.js" type="module"></script>
+    <script src="JS/crearProducto.js" type="module"></script>
+</body>
+</html>

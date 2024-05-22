@@ -1,0 +1,274 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #C0C0C0;
+    min-height: 100vh; /* Establece una altura mínima igual al 100% de la altura de la ventana del navegador */
+    position: relative;
+    padding-bottom: 100px; /* Ajusta según la altura de tu footer */
+    box-sizing: border-box;
+    
+}
+
+.encabezado {
+    display: flex;
+    background-color: #000000;
+    justify-content: center; /*centrar imagen */
+    color: #fff;
+    padding: 20px 0;
+}
+
+.ordenar__formprod{
+    display: flex;
+}
+.header__logo{
+    border-radius: 20px;
+}
+
+.productos__header{
+    width: 40%;
+    text-align: center;
+    margin-top: 5%;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.productos{
+    width: 30%;
+    margin-left: 5%;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5); /* Sombra */
+    padding-left: 3px;
+    padding-right: 3px;
+    
+}
+
+.productos-grid{
+    padding-top: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Espacio uniforme entre las habilidades */
+    font-family: 'Dancing Script', cursive;
+}
+
+.producto_box{
+    position: relative;
+    width: 30%;
+    height: 180px;
+    padding-top: 20px;
+    border: 2px solid #000000;
+    border-radius: 1px;
+    background-color: rgb(83, 18, 187);
+    margin-bottom: 10px;
+    color: white;
+    font-size: 10px;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5); /* Sombra */
+    transition: .8s;
+}
+
+.producto_box img{
+    align-items: center;
+    margin-bottom: 10px;
+    width: 40%;
+    height: auto;
+    border-color: black;
+}
+.producto_box:hover{
+    transform: scale(1.2);
+}
+
+.borrar-producto{
+    position: absolute;
+    bottom: 5px; /* Ajusta según sea necesario */
+    right: 5px; /* Ajusta según sea necesario */
+    padding: 8px 10px;
+    cursor: pointer;
+    background-color: rgb(83, 18, 187);
+    border: none;
+    transition: 2s;
+}
+.borrar-producto img {
+    width: 20px; /* Ajusta según sea necesario */
+    height: 20px; /* Ajusta según sea necesario */
+}
+
+.borrar-producto:hover{
+    transform: scale(1.3);
+}
+
+.formulario__Texto{
+    width: 40%;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.formulario {
+    margin-left: 20%;
+    flex-wrap: wrap;
+}
+
+.formulario__campo input {
+    border-radius: 50px; /* Bordes redondos */
+    border: 2px solid darkblue; /* Color de borde azul */
+    
+}
+.campo__escrita {
+    background-color: #e0e0e0b4;
+    width: 300px;
+    border-radius: 24px;
+    display: block;
+    padding: 1em;
+    margin-bottom: 10px;
+    transition: .2s;
+}
+
+.campo__escrita:hover{
+    transform: scale(1.1);
+}
+
+.formulario__campo input::placeholder {
+    color: #007bff; /* Color del texto del placeholder */
+}
+.formulario__boton{
+    background-color: darkblue;
+    color: white;
+    border-radius: 20px;
+    padding: 15px;
+    width: 35%;
+    height: auto;
+    border: none;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+.formulario__boton__reset{
+    background-color: white;
+    color: darkblue;
+    border-radius: 20px;
+    padding: 11px;
+    width: 35%;
+    height: auto;
+    border-color: darkblue;
+    margin-left: 15px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.formulario__boton:hover{
+    transform: scale(1.2);
+}
+.formulario__boton__reset:hover{
+    transform: scale(1.2);
+}
+
+footer {
+    position: absolute; /* Fija el footer */
+    left: 0; /* Lo coloca en el extremo izquierdo */
+    bottom: 0; /* Lo coloca en el extremo inferior */
+    width: 100%; /* Ancho completo */
+    background-color: #333; /* Color de fondo del footer */
+    color: #fff; /* Color del texto */
+    padding: 20px 0; /* Espaciado interno */
+    text-align: center; /* Centrar el contenido */
+    height: auto;
+}
+
+/* responsive */
+@media only screen and (max-width: 768px) {
+    
+    .header__logo{
+        width: 100%; /* Ocupar todo el ancho disponible */
+        margin: 0; /* Eliminar márgenes para un mejor ajuste */
+        border-radius: 20px;
+        height: auto;
+    }
+
+    .productos__header{
+        margin-left: 20%;
+        width: 40%;
+        margin-top: 5%;
+        font-family: 'Press Start 2P', cursive;
+        margin-bottom: 60px;
+    }
+
+    .productos{
+        display: flex;
+        width: 70%;
+    }
+
+    .productos__header{
+        text-align: center;
+        margin-top: 5%;
+        font-family: 'Press Start 2P', cursive;
+    }
+
+    .productos-grid{
+        align-items: center;
+        padding-top: 5px;
+        flex-wrap: wrap;
+        justify-content: space-between; /* Espacio uniforme entre las habilidades */
+        font-family: 'Dancing Script', cursive;
+    }
+
+    .ordenar__formprod{
+        display: inline-block;
+    }
+
+    .producto_box{
+        width: 45%; /* Reducir el ancho para acomodar mejor en dispositivos pequeños */
+        margin: 5px; /* Agregar un pequeño margen entre los productos */
+        
+        height: auto;
+        padding-top: 20px;
+        border: 2px solid #000000;
+        border-radius: 1px;
+        background-color: rgb(83, 18, 187);
+        margin-bottom: 10px;
+        color: white;
+        font-size: 10px;
+        box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5); /* Sombra */
+        transition: .8s;
+    }
+
+    .producto_box img{
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        height: auto;
+        border-color: black;
+    }
+
+    /* formulario */
+
+    .formulario__Texto{
+        margin-left: 10%;
+        width: 100%; /* Ocupar todo el ancho disponible */
+        margin: 0; /* Eliminar márgenes para un mejor ajuste */
+        margin-top: 10%;
+        font-family: 'Press Start 2P', cursive;
+        margin-bottom: 50px;
+        
+    }
+
+    .formulario__campo {
+        width: 100%; /* Ocupar todo el ancho disponible */
+        margin: 0; /* Eliminar márgenes para un mejor ajuste */
+    }
+
+    .campo__escrita {
+        border-radius: 24px;
+        padding: 1em;
+        margin-bottom: 35px;
+    }
+
+    .formulario__boton{
+        width: 25%;
+        height: auto;
+        
+    }
+    .formulario__boton__reset{
+        width: 25%;
+        height: auto;
+    }
+
+
+  }
